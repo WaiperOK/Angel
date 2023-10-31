@@ -577,22 +577,22 @@ int main()
     t3.join();
     t4.join();
 
-    std::string snmp_response = "Windows SNMP response";
-    std::string smb_response = "Linux SMB response";
-    std::string ssh_banner = "OpenSSH banner";
+    string snmp_response = "Windows SNMP response";
+    string smb_response = "Linux SMB response";
+    string ssh_banner = "OpenSSH banner";
     int ttl = 64;
-    std::string banner = "Web server banner";
-    std::string http_response = "HTTP Response";
-    std::string ftp_banner = "FTP Banner";
+    string banner = "Web server banner";
+    string http_response = "HTTP Response";
+    string ftp_banner = "FTP Banner";
 
-    std::cout << GetOperatingSystemFromSNMPResponse(snmp_response) << std::endl;
-    std::cout << GetOperatingSystemFromSMBResponse(smb_response) << std::endl;
-    std::cout << GetOperatingSystemFromSSH(ssh_banner) << std::endl;
-    std::cout << GetOperatingSystemFromTTL(ttl) << std::endl;
-    std::cout << GetOperatingSystemFromBanner(banner) << std::endl;
-    std::cout << GetOperatingSystemFromHTTPResponse(http_response) << std::endl;
-    std::cout << GetOperatingSystemFromHTTPHeader(http_response) << std::endl;
-    std::cout << GetOperatingSystemFromFTPBanner(ftp_banner) << std::endl;
+    cout << GetOperatingSystemFromSNMPResponse(snmp_response) << std::endl;
+    cout << GetOperatingSystemFromSMBResponse(smb_response) << std::endl;
+    cout << GetOperatingSystemFromSSH(ssh_banner) << std::endl;
+    cout << GetOperatingSystemFromTTL(ttl) << std::endl;
+    cout << GetOperatingSystemFromBanner(banner) << std::endl;
+    cout << GetOperatingSystemFromHTTPResponse(http_response) << std::endl;
+    cout << GetOperatingSystemFromHTTPHeader(http_response) << std::endl;
+    cout << GetOperatingSystemFromFTPBanner(ftp_banner) << std::endl;
 
     return 0;
 }
